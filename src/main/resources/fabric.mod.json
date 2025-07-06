@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "bazaarflipper",
+  "version": "1.0.0",
+  "name": "Hypixel Bazaar Flipper",
+  "description": "Automatischer Bazaar Flipper für Hypixel Skyblock",
+  "authors": ["Sophie"],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/bazaarflipper/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      {
+        "adapter": "kotlin",
+        "value": "dev.sophie.bazaarflipper.BazaarFlipperMod"
+      }
+    ]
+  },
+  "mixins": [
+    "bazaarflipper.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.15.0",
+    "fabric-api": "*",
+    "minecraft": "1.21.5",
+    "fabric-language-kotlin": ">=1.10.0+kotlin.1.9.0"
+  }
+}
